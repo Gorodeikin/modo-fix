@@ -73,6 +73,23 @@
     font-size: 20px;
     line-height: 28px;
   }
+
+  .approach {
+    padding: 88px 0;
+  }
+
+  .approach__label {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+  }
+
+  .approach__title {
+    grid-column: 4 / span 8;
+    grid-row: 1;
+
+    font-size: 64px;
+    line-height: 70.4px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -186,6 +203,27 @@
   .hero__cta {
     width: 248px;
     height: 48px;
+  }
+
+  .approach {
+    padding: 120px 0;
+  }
+
+  .approach__label {
+    grid-column: 1 / span 3;
+  }
+
+  .approach__title {
+    grid-column: 5 / span 7;
+    width: 699.33px;
+  }
+
+  .approach__break--mobile-tablet {
+    display: none;
+  }
+
+  .approach__break--desktop {
+    display: initial;
   }
 }
 

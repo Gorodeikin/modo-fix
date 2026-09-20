@@ -140,3 +140,48 @@
 .hero__break--desktop {
   display: none;
 }
+
+.approach {
+  padding-block: 80px;
+
+  background: var(--color-stone);
+  border-top: 1px solid var(--color-hairline);
+}
+
+.approach__inner {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+.approach__label {
+  grid-column: 1 / -1;
+
+  height: 40px;
+  padding-top: 18.5px;
+  padding-bottom: 1.5px;
+
+  color: var(--color-hairline);
+
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.approach__title {
+  grid-column: 1 / -1;
+
+  color: var(--color-graphite);
+
+  font-size: 48px;
+  line-height: 52.8px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.approach__break--desktop {
+  display: none;
+}
