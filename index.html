@@ -23,13 +23,45 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="site-logo" href="/" aria-label="Modo Fix — Home">
+  <header class="site-header" id="top">
+    <div class="site-header__inner">
+      <a class="site-logo" href="#top" aria-label="Modo Fix — Home">
         MODO FIX
       </a>
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <a href="#servizi">SERVIZI</a>
+        <a href="#come-funziona">COME FUNZIONA</a>
+        <a href="#zone">ZONE</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="site-header__actions">
+        <a class="header-cta" href="#preventivo">
+          RICHIEDI UN PREVENTIVO
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="menu-toggle__lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
     </div>
   </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Menu mobile">
+      <a class="mobile-menu__link" href="#servizi">SERVIZI</a>
+      <a class="mobile-menu__link" href="#come-funziona">COME FUNZIONA</a>
+      <a class="mobile-menu__link" href="#zone">ZONE</a>
+      <a class="mobile-menu__link" href="#faq">FAQ</a>
+    </nav>
+    <div class="mobile-menu__cta-wrap">
+      <a class="mobile-menu__cta" href="#preventivo">
+        RICHIEDI UN PREVENTIVO
+      </a>
+    </div>
+  </div>
 
   <main id="main-content">
     <section class="development-placeholder">

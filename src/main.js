@@ -1,3 +1,4 @@
+import './styles/fonts.css'
 import './styles/tokens.css'
 import './styles/reset.css'
 import './styles/base.css'
@@ -5,3 +6,5 @@ import './styles/layout.css'
 import './styles/components.css'
 import './styles/sections.css'
 import './styles/responsive.css'
+
+import './scripts/menu.js'
