@@ -64,9 +64,42 @@
   </div>
 
   <main id="main-content">
-    <section class="development-placeholder">
-      <div class="container">
-        <p>Modo Fix — development foundation</p>
+    <section class="hero">
+      <div class="hero__inner">
+        <h1 class="hero__title">
+          PICCOLI<br class="hero__break hero__break--mobile-desktop">
+          LAVORI.<br class="hero__break">
+          FATTI COME<br class="hero__break hero__break--desktop">
+          SI<br class="hero__break hero__break--mobile-tablet">
+          DEVE.
+        </h1>
+        <picture class="hero__media">
+          <source type="image/webp" srcset="
+              /images/modo-fix-hero-360.webp 360w,
+              /images/modo-fix-hero-480.webp 480w,
+              /images/modo-fix-hero-768.webp 768w,
+              /images/modo-fix-hero-960.webp 960w,
+              /images/modo-fix-hero-1200.webp 1200w
+            " sizes="
+              (max-width: 767px) calc(100vw - 40px),
+              (max-width: 1279px) calc(100vw - 64px),
+              (max-width: 1343px) calc(41.6667vw - 36.667px),
+              (max-width: 1439px) 523.33px,
+              (max-width: 1919px) calc(316px + 14.375vw),
+              592px
+            "/>
+          <img class="hero__image" src="/images/modo-fix-hero.jpeg" width="1200" height="896"
+            alt="Artigiano che livella una mensola in legno con una livella gialla" fetchpriority="high"
+            decoding="async" />
+        </picture>
+        <div class="hero__content">
+          <p class="hero__text">
+            Riparazioni, montaggi e manutenzione per la casa a Brindisi Montagna e nelle zone limitrofe.
+          </p>
+          <a class="hero__cta" href="#preventivo">
+            RICHIEDI UN PREVENTIVO
+          </a>
+        </div>
       </div>
     </section>
   </main>
