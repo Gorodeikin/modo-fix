@@ -1,0 +1,28 @@
+.container {
+  width: calc(100% - 40px);
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: calc(100% - 64px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: min(calc(100% - 64px), 1280px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: clamp(1280px, calc(800px + 33.333vw), 1440px);
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    width: 1440px;
+  }
+}

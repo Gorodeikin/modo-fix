@@ -1,0 +1,23 @@
+:root {
+  --color-graphite: #1d211f;
+  --color-graphite-2: #2d312e;
+
+  --color-stone: #f2efe7;
+  --color-stone-light: #f7f5ef;
+  --color-stone-mid: #eae7df;
+
+  --color-oxide: #b55236;
+  --color-hairline: #a8aaa4;
+  --color-muted: #686c68;
+  --color-white: #ffffff;
+
+  --font-primary: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+
+  --container-mobile-gutter: 20px;
+  --container-tablet-gutter: 32px;
+
+  --header-height: 80px;
+
+  --border-width: 1px;
+  --focus-width: 2px;
+}
