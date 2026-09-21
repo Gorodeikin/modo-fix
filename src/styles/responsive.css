@@ -168,6 +168,63 @@
     grid-column: 9 / span 4;
     grid-row: 1;
   }
+
+  .details__inner {
+    padding: 96px 32px;
+    gap: 64px;
+  }
+
+  .details__heading {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 24px;
+  }
+
+  .details__label {
+    grid-column: 1 / span 3;
+
+    margin-bottom: 0;
+  }
+
+  .details__title {
+    grid-column: 4 / span 9;
+
+    font-size: 64px;
+    line-height: 70.4px;
+  }
+
+  .details__break--mobile-desktop {
+    display: none;
+  }
+
+  .details__gallery {
+    padding-bottom: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .details__column {
+    gap: 24px;
+  }
+
+  .details__pair {
+    gap: 24px;
+  }
+
+  .details__column--right {
+    padding-top: 64px;
+  }
+
+  .details__media--hardware,
+  .details__media--tools {
+    height: 255px;
+  }
+
+  .details__media--level {
+    height: 453.33px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -364,6 +421,54 @@
     font-size: 24px;
     line-height: 36px;
   }
+
+  .details__inner {
+    padding: 160px 32px;
+    gap: 64px;
+  }
+
+  .details__label {
+    grid-column: 1 / span 3;
+  }
+
+  .details__title {
+    grid-column: 4 / span 9;
+    width: 768px;
+  }
+
+  .details__break--mobile-tablet {
+    display: none;
+  }
+
+  .details__break--mobile-desktop {
+    display: initial;
+  }
+
+  .details__gallery {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .details__column--left {
+    grid-column: 1 / span 7;
+  }
+
+  .details__column--right {
+    grid-column: 8 / span 5;
+    padding-top: 64px;
+  }
+
+  .details__media--hardware {
+    height: 524.48px;
+  }
+
+  .details__media--level {
+    height: 656.89px;
+  }
+
+  .details__media--tools {
+    height: 369.5px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -394,5 +499,14 @@
   .how-it-works__steps {
     padding-right: 80px;
     padding-left: 80px;
+  }
+
+  .details__inner {
+    max-width: 1440px;
+  }
+
+  .details__pair {
+    grid-template-columns: 337.66px 337.67px;
+    justify-content: center;
   }
 }
