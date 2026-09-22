@@ -1,603 +1,657 @@
 <!doctype html>
 <html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Modo Fix | Riparazioni e manutenzione casa a Brindisi Montagna
+    </title>
 
-  <title>Modo Fix | Riparazioni e manutenzione casa a Brindisi Montagna</title>
+    <meta
+      name="description"
+      content="Riparazioni, montaggi e piccoli lavori di manutenzione per la casa a Brindisi Montagna e nelle zone limitrofe."
+    />
 
-  <meta name="description"
-    content="Riparazioni, montaggi e piccoli lavori di manutenzione per la casa a Brindisi Montagna e nelle zone limitrofe." />
+    <meta name="theme-color" content="#F2EFE7" />
 
-  <meta name="theme-color" content="#F2EFE7" />
+    <meta
+      property="og:title"
+      content="Modo Fix | Riparazioni e manutenzione casa a Brindisi Montagna"
+    />
+    <meta
+      property="og:description"
+      content="Riparazioni, montaggi e piccoli lavori di manutenzione per la casa a Brindisi Montagna e nelle zone limitrofe."
+    />
+    <meta property="og:type" content="website" />
 
-  <meta property="og:title" content="Modo Fix | Riparazioni e manutenzione casa a Brindisi Montagna" />
-  <meta property="og:description"
-    content="Riparazioni, montaggi e piccoli lavori di manutenzione per la casa a Brindisi Montagna e nelle zone limitrofe." />
-  <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <meta name="twitter:card" content="summary_large_image" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
 
-  <script type="module" src="/src/main.js"></script>
-</head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="site-header__inner">
+        <a class="site-logo" href="#top" aria-label="Modo Fix — Home">
+          MODO FIX
+        </a>
+        <nav class="site-nav" aria-label="Navigazione principale">
+          <a href="#servizi">SERVIZI</a>
+          <a href="#come-funziona">COME FUNZIONA</a>
+          <a href="#zone">ZONE</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="site-header__actions">
+          <a class="header-cta" href="#preventivo"> RICHIEDI UN PREVENTIVO </a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Apri il menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="menu-toggle__lines" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
 
-<body>
-  <header class="site-header" id="top">
-    <div class="site-header__inner">
-      <a class="site-logo" href="#top" aria-label="Modo Fix — Home">
-        MODO FIX
-      </a>
-      <nav class="site-nav" aria-label="Navigazione principale">
-        <a href="#servizi">SERVIZI</a>
-        <a href="#come-funziona">COME FUNZIONA</a>
-        <a href="#zone">ZONE</a>
-        <a href="#faq">FAQ</a>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav class="mobile-menu__nav" aria-label="Menu mobile">
+        <a class="mobile-menu__link" href="#servizi">SERVIZI</a>
+        <a class="mobile-menu__link" href="#come-funziona">COME FUNZIONA</a>
+        <a class="mobile-menu__link" href="#zone">ZONE</a>
+        <a class="mobile-menu__link" href="#faq">FAQ</a>
       </nav>
-      <div class="site-header__actions">
-        <a class="header-cta" href="#preventivo">
+      <div class="mobile-menu__cta-wrap">
+        <a class="mobile-menu__cta" href="#preventivo">
           RICHIEDI UN PREVENTIVO
         </a>
-        <button class="menu-toggle" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span class="menu-toggle__lines" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
       </div>
     </div>
-  </header>
 
-  <div class="mobile-menu" id="mobile-menu" hidden>
-    <nav class="mobile-menu__nav" aria-label="Menu mobile">
-      <a class="mobile-menu__link" href="#servizi">SERVIZI</a>
-      <a class="mobile-menu__link" href="#come-funziona">COME FUNZIONA</a>
-      <a class="mobile-menu__link" href="#zone">ZONE</a>
-      <a class="mobile-menu__link" href="#faq">FAQ</a>
-    </nav>
-    <div class="mobile-menu__cta-wrap">
-      <a class="mobile-menu__cta" href="#preventivo">
-        RICHIEDI UN PREVENTIVO
-      </a>
-    </div>
-  </div>
-
-  <main id="main-content">
-    <section class="hero">
-      <div class="hero__inner">
-        <h1 class="hero__title">
-          PICCOLI<br class="hero__break hero__break--mobile-desktop">
-          LAVORI.<br class="hero__break">
-          FATTI COME<br class="hero__break hero__break--desktop">
-          SI<br class="hero__break hero__break--mobile-tablet">
-          DEVE.
-        </h1>
-        <picture class="hero__media">
-          <source type="image/webp" srcset="
-              /images/modo-fix-hero-360.webp 360w,
-              /images/modo-fix-hero-480.webp 480w,
-              /images/modo-fix-hero-768.webp 768w,
-              /images/modo-fix-hero-960.webp 960w,
-              /images/modo-fix-hero-1200.webp 1200w
-            " sizes="
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero__inner">
+          <h1 class="hero__title">
+            PICCOLI<br class="hero__break hero__break--mobile-desktop" />
+            LAVORI.<br class="hero__break" />
+            FATTI COME<br class="hero__break hero__break--desktop" />
+            SI<br class="hero__break hero__break--mobile-tablet" />
+            DEVE.
+          </h1>
+          <picture class="hero__media">
+            <source
+              type="image/webp"
+              srcset="
+                /images/modo-fix-hero-360.webp   360w,
+                /images/modo-fix-hero-480.webp   480w,
+                /images/modo-fix-hero-768.webp   768w,
+                /images/modo-fix-hero-960.webp   960w,
+                /images/modo-fix-hero-1200.webp 1200w
+              "
+              sizes="
               (max-width: 767px) calc(100vw - 40px),
               (max-width: 1279px) calc(100vw - 64px),
               (max-width: 1343px) calc(41.6667vw - 36.667px),
               (max-width: 1439px) 523.33px,
               (max-width: 1919px) calc(316px + 14.375vw),
               592px
-            "/>
-          <img class="hero__image" src="/images/modo-fix-hero-1200.webp" width="1200" height="896"
-            alt="Artigiano che livella una mensola in legno con una livella gialla" fetchpriority="high"
-            decoding="async" />
-        </picture>
-        <div class="hero__content">
-          <p class="hero__text">
-            Riparazioni, montaggi e manutenzione per la casa a Brindisi Montagna e nelle zone limitrofe.
-          </p>
-          <a class="hero__cta" href="#preventivo">
-            RICHIEDI UN PREVENTIVO
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="approach" aria-labelledby="approach-title">
-      <div class="container approach__inner">
-        <div class="approach__label">
-          L'APPROCCIO
-        </div>
-        <h2 class="approach__title" id="approach-title">
-          NON SERVE<br class="approach__break approach__break--mobile-tablet">
-          UNA<br class="approach__break approach__break--desktop">
-          GRANDE<br class="approach__break approach__break--mobile-tablet">
-          IMPRESA PER<br class="approach__break">
-          OGNI<br class="approach__break approach__break--mobile-tablet">
-          PICCOLO<br class="approach__break approach__break--desktop">
-          LAVORO.<br class="approach__break approach__break--mobile-tablet">
-          MA VALE<br class="approach__break">
-          COMUNQUE<br class="approach__break approach__break--mobile-tablet">
-          LA PENA<br class="approach__break">
-          FARLO BENE.
-        </h2>
-      </div>
-    </section>
-    <section class="services" id="servizi" aria-labelledby="services-title">
-      <div class="container services__inner">
-        <div class="services__intro">
-          <div class="services__label">01 / SERVIZI</div>
-          <h2 class="services__title" id="services-title">
-            COSA<br>
-            POSSIAMO<br>
-            FARE<br class="services__break--mobile">
-            PER TE
-          </h2>
-        </div>
-        <ul class="services__list">
-          <li class="services__item">Piccole riparazioni</li>
-          <li class="services__item">Installazioni</li>
-          <li class="services__item">Montaggio mobili</li>
-          <li class="services__item">Pittura e ritocchi</li>
-          <li class="services__item">Manutenzione casa</li>
-          <li class="services__item">Preparazione immobili</li>
-        </ul>
-        <picture class="services__media">
-          <source type="image/webp" srcset="
-              /images/modo-fix-services-tools-360.webp 360w,
-              /images/modo-fix-services-tools-480.webp 480w,
-              /images/modo-fix-services-tools-768.webp 768w,
-              /images/modo-fix-services-tools-960.webp 960w,
-              /images/modo-fix-services-tools-1200.webp 1200w
-            " sizes="(max-width: 767px) calc(100vw - 40px), 460px">
-          <img class="services__image" src="/images/modo-fix-services-tools-1200.webp" width="1200" height="896"
-            alt="Attrezzi manuali disposti su un banco da lavoro" loading="lazy" decoding="async">
-        </picture>
-      </div>
-    </section>
-    <section class="how-it-works" id="come-funziona" aria-labelledby="how-it-works-title">
-      <div class="how-it-works__inner">
-        <div class="how-it-works__intro">
-          <div class="how-it-works__label">
-            02 / COME FUNZIONA
+            "
+            />
+            <img
+              class="hero__image"
+              src="/images/modo-fix-hero-1200.webp"
+              width="1200"
+              height="896"
+              alt="Artigiano che livella una mensola in legno con una livella gialla"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
+          <div class="hero__content">
+            <p class="hero__text">
+              Riparazioni, montaggi e manutenzione per la casa a Brindisi
+              Montagna e nelle zone limitrofe.
+            </p>
+            <a class="hero__cta" href="#preventivo"> RICHIEDI UN PREVENTIVO </a>
           </div>
-          <h2 class="how-it-works__title" id="how-it-works-title">
-            SEMPLICE,<br class="how-it-works__break--mobile">
-            DALLA<br>
-            RICHIESTA<br>
-            ALL'INTERVENTO.
+        </div>
+      </section>
+      <section class="approach" aria-labelledby="approach-title">
+        <div class="container approach__inner">
+          <div class="approach__label">L'APPROCCIO</div>
+          <h2 class="approach__title" id="approach-title">
+            NON SERVE<br
+              class="approach__break approach__break--mobile-tablet"
+            />
+            UNA<br class="approach__break approach__break--desktop" />
+            GRANDE<br class="approach__break approach__break--mobile-tablet" />
+            IMPRESA PER<br class="approach__break" />
+            OGNI<br class="approach__break approach__break--mobile-tablet" />
+            PICCOLO<br class="approach__break approach__break--desktop" />
+            LAVORO.<br class="approach__break approach__break--mobile-tablet" />
+            MA VALE<br class="approach__break" />
+            COMUNQUE<br
+              class="approach__break approach__break--mobile-tablet"
+            />
+            LA PENA<br class="approach__break" />
+            FARLO BENE.
           </h2>
         </div>
-        <div class="how-it-works__steps">
-          <article class="how-it-works__step">
-            <div class="how-it-works__step-marker" aria-hidden="true">
-              <span>01</span>
-            </div>
-            <h3 class="how-it-works__step-title">
-              RACCONTACI COSA C'È DA FARE
-            </h3>
-            <p class="how-it-works__step-text">
-              Descrivi il lavoro e, se può essere utile, aggiungi qualche foto.
-            </p>
-          </article>
-          <article class="how-it-works__step">
-            <div class="how-it-works__step-marker" aria-hidden="true">
-              <span>02</span>
-            </div>
-            <h3 class="how-it-works__step-title">
-              RICEVI UNA STIMA CHIARA
-            </h3>
-            <p class="how-it-works__step-text">
-              La richiesta può essere valutata prima di concordare l'intervento.
-            </p>
-          </article>
-          <article class="how-it-works__step">
-            <div class="how-it-works__step-marker" aria-hidden="true">
-              <span>03</span>
-            </div>
-            <h3 class="how-it-works__step-title">
-              SCEGLI QUANDO INTERVENIRE
-            </h3>
-            <p class="how-it-works__step-text">
-              Concorda i dettagli pratici e il momento più adatto per l'intervento.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="details" aria-labelledby="details-title">
-      <div class="details__inner">
-        <div class="details__heading">
-          <div class="details__label">
-            03 / DETTAGLI
+      </section>
+      <section class="services" id="servizi" aria-labelledby="services-title">
+        <div class="container services__inner">
+          <div class="services__intro">
+            <div class="services__label">01 / SERVIZI</div>
+            <h2 class="services__title" id="services-title">
+              COSA<br />
+              POSSIAMO<br />
+              FARE<br class="services__break--mobile" />
+              PER TE
+            </h2>
           </div>
-          <h2 class="details__title" id="details-title">
-            UNA CASA È<br class="details__break details__break--mobile-tablet">
-            FATTA DI<br class="details__break details__break--mobile-desktop">
-            TANTE<br class="details__break details__break--mobile-tablet">
-            PICCOLE COSE.
-          </h2>
+          <ul class="services__list">
+            <li class="services__item">Piccole riparazioni</li>
+            <li class="services__item">Installazioni</li>
+            <li class="services__item">Montaggio mobili</li>
+            <li class="services__item">Pittura e ritocchi</li>
+            <li class="services__item">Manutenzione casa</li>
+            <li class="services__item">Preparazione immobili</li>
+          </ul>
+          <picture class="services__media">
+            <source
+              type="image/webp"
+              srcset="
+                /images/modo-fix-services-tools-360.webp   360w,
+                /images/modo-fix-services-tools-480.webp   480w,
+                /images/modo-fix-services-tools-768.webp   768w,
+                /images/modo-fix-services-tools-960.webp   960w,
+                /images/modo-fix-services-tools-1200.webp 1200w
+              "
+              sizes="(max-width: 767px) calc(100vw - 40px), 460px"
+            />
+            <img
+              class="services__image"
+              src="/images/modo-fix-services-tools-1200.webp"
+              width="1200"
+              height="896"
+              alt="Attrezzi manuali disposti su un banco da lavoro"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
-        <div class="details__gallery">
-          <div class="details__column details__column--left">
-            <picture class="details__media details__media--hardware">
-              <source
-                type="image/webp"
-                srcset="
-                  /images/modo-fix-details-hardware-360.webp 360w,
-                  /images/modo-fix-details-hardware-480.webp 480w,
-                  /images/modo-fix-details-hardware-768.webp 768w,
-                  /images/modo-fix-details-hardware-960.webp 960w,
-                  /images/modo-fix-details-hardware-1200.webp 1200w
-                "
-                sizes="
+      </section>
+      <section
+        class="how-it-works"
+        id="come-funziona"
+        aria-labelledby="how-it-works-title"
+      >
+        <div class="how-it-works__inner">
+          <div class="how-it-works__intro">
+            <div class="how-it-works__label">02 / COME FUNZIONA</div>
+            <h2 class="how-it-works__title" id="how-it-works-title">
+              SEMPLICE,<br class="how-it-works__break--mobile" />
+              DALLA<br />
+              RICHIESTA<br />
+              ALL'INTERVENTO.
+            </h2>
+          </div>
+          <div class="how-it-works__steps">
+            <article class="how-it-works__step">
+              <div class="how-it-works__step-marker" aria-hidden="true">
+                <span>01</span>
+              </div>
+              <h3 class="how-it-works__step-title">
+                RACCONTACI COSA C'È DA FARE
+              </h3>
+              <p class="how-it-works__step-text">
+                Descrivi il lavoro e, se può essere utile, aggiungi qualche
+                foto.
+              </p>
+            </article>
+            <article class="how-it-works__step">
+              <div class="how-it-works__step-marker" aria-hidden="true">
+                <span>02</span>
+              </div>
+              <h3 class="how-it-works__step-title">RICEVI UNA STIMA CHIARA</h3>
+              <p class="how-it-works__step-text">
+                La richiesta può essere valutata prima di concordare
+                l'intervento.
+              </p>
+            </article>
+            <article class="how-it-works__step">
+              <div class="how-it-works__step-marker" aria-hidden="true">
+                <span>03</span>
+              </div>
+              <h3 class="how-it-works__step-title">
+                SCEGLI QUANDO INTERVENIRE
+              </h3>
+              <p class="how-it-works__step-text">
+                Concorda i dettagli pratici e il momento più adatto per
+                l'intervento.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="details" aria-labelledby="details-title">
+        <div class="details__inner">
+          <div class="details__heading">
+            <div class="details__label">03 / DETTAGLI</div>
+            <h2 class="details__title" id="details-title">
+              UNA CASA È<br
+                class="details__break details__break--mobile-tablet"
+              />
+              FATTA DI<br
+                class="details__break details__break--mobile-desktop"
+              />
+              TANTE<br class="details__break details__break--mobile-tablet" />
+              PICCOLE COSE.
+            </h2>
+          </div>
+          <div class="details__gallery">
+            <div class="details__column details__column--left">
+              <picture class="details__media details__media--hardware">
+                <source
+                  type="image/webp"
+                  srcset="
+                    /images/modo-fix-details-hardware-360.webp   360w,
+                    /images/modo-fix-details-hardware-480.webp   480w,
+                    /images/modo-fix-details-hardware-768.webp   768w,
+                    /images/modo-fix-details-hardware-960.webp   960w,
+                    /images/modo-fix-details-hardware-1200.webp 1200w
+                  "
+                  sizes="
                   (max-width: 767px) calc(100vw - 40px),
                   (max-width: 1279px) calc((100vw - 88px) / 2),
                   (max-width: 1919px) 699.33px,
                   792.67px
                 "
-              >
-              <img
-                class="details__image"
-                src="/images/modo-fix-details-hardware-1200.webp"
-                alt="Materiali e ferramenta durante un lavoro di manutenzione"
-                loading="lazy"
-                decoding="async"
-              >
-            </picture>
-            <div class="details__pair">
-              <picture class="details__media details__media--square">
-                <source
-                  type="image/webp"
-                  srcset="
-                    /images/modo-fix-details-hinge-360.webp 360w,
-                    /images/modo-fix-details-hinge-480.webp 480w,
-                    /images/modo-fix-details-hinge-768.webp 768w,
-                    /images/modo-fix-details-hinge-960.webp 960w,
-                    /images/modo-fix-details-hinge-1024.webp 1024w
-                  "
-                  sizes="
-                    (max-width: 767px) calc((100vw - 56px) / 2),
-                    (max-width: 1279px) calc((100vw - 136px) / 4),
-                    337.67px
-                  "
-                >
+                />
                 <img
                   class="details__image"
-                  src="/images/modo-fix-details-hinge-1024.webp"
-                  alt="Dettaglio di una cerniera durante una riparazione"
+                  src="/images/modo-fix-details-hardware-1200.webp"
+                  alt="Materiali e ferramenta durante un lavoro di manutenzione"
                   loading="lazy"
                   decoding="async"
-                >
+                />
               </picture>
-              <picture class="details__media details__media--square">
-                <source
-                  type="image/webp"
-                  srcset="
-                    /images/modo-fix-details-interior-360.webp 360w,
-                    /images/modo-fix-details-interior-480.webp 480w,
-                    /images/modo-fix-details-interior-768.webp 768w,
-                    /images/modo-fix-details-interior-960.webp 960w,
-                    /images/modo-fix-details-interior-1024.webp 1024w
-                  "
-                  sizes="
+              <div class="details__pair">
+                <picture class="details__media details__media--square">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      /images/modo-fix-details-hinge-360.webp   360w,
+                      /images/modo-fix-details-hinge-480.webp   480w,
+                      /images/modo-fix-details-hinge-768.webp   768w,
+                      /images/modo-fix-details-hinge-960.webp   960w,
+                      /images/modo-fix-details-hinge-1024.webp 1024w
+                    "
+                    sizes="
                     (max-width: 767px) calc((100vw - 56px) / 2),
                     (max-width: 1279px) calc((100vw - 136px) / 4),
                     337.67px
                   "
-                >
+                  />
+                  <img
+                    class="details__image"
+                    src="/images/modo-fix-details-hinge-1024.webp"
+                    alt="Dettaglio di una cerniera durante una riparazione"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <picture class="details__media details__media--square">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      /images/modo-fix-details-interior-360.webp   360w,
+                      /images/modo-fix-details-interior-480.webp   480w,
+                      /images/modo-fix-details-interior-768.webp   768w,
+                      /images/modo-fix-details-interior-960.webp   960w,
+                      /images/modo-fix-details-interior-1024.webp 1024w
+                    "
+                    sizes="
+                    (max-width: 767px) calc((100vw - 56px) / 2),
+                    (max-width: 1279px) calc((100vw - 136px) / 4),
+                    337.67px
+                  "
+                  />
+                  <img
+                    class="details__image"
+                    src="/images/modo-fix-details-interior-1024.webp"
+                    alt="Interno di una casa durante piccoli lavori"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="details__column details__column--right">
+              <picture class="details__media details__media--level">
+                <source
+                  type="image/webp"
+                  srcset="
+                    /images/modo-fix-details-level-360.webp   360w,
+                    /images/modo-fix-details-level-480.webp   480w,
+                    /images/modo-fix-details-level-768.webp   768w,
+                    /images/modo-fix-details-level-960.webp   960w,
+                    /images/modo-fix-details-level-1200.webp 1200w
+                  "
+                  sizes="
+                  (max-width: 767px) calc(100vw - 40px),
+                  (max-width: 1279px) calc((100vw - 88px) / 2),
+                  (max-width: 1919px) 492.67px,
+                  559.33px
+                "
+                />
                 <img
                   class="details__image"
-                  src="/images/modo-fix-details-interior-1024.webp"
-                  alt="Interno di una casa durante piccoli lavori"
+                  src="/images/modo-fix-details-level-1200.webp"
+                  alt="Livella utilizzata durante un lavoro di montaggio"
                   loading="lazy"
                   decoding="async"
-                >
+                />
+              </picture>
+              <picture class="details__media details__media--tools">
+                <source
+                  type="image/webp"
+                  srcset="
+                    /images/modo-fix-details-tools-360.webp   360w,
+                    /images/modo-fix-details-tools-480.webp   480w,
+                    /images/modo-fix-details-tools-768.webp   768w,
+                    /images/modo-fix-details-tools-960.webp   960w,
+                    /images/modo-fix-details-tools-1200.webp 1200w
+                  "
+                  sizes="
+                  (max-width: 767px) calc(100vw - 40px),
+                  (max-width: 1279px) calc((100vw - 88px) / 2),
+                  (max-width: 1919px) 492.67px,
+                  559.33px
+                "
+                />
+                <img
+                  class="details__image"
+                  src="/images/modo-fix-details-tools-1200.webp"
+                  alt="Attrezzi manuali pronti per un intervento"
+                  loading="lazy"
+                  decoding="async"
+                />
               </picture>
             </div>
           </div>
-          <div class="details__column details__column--right">
-            <picture class="details__media details__media--level">
-              <source
-                type="image/webp"
-                srcset="
-                  /images/modo-fix-details-level-360.webp 360w,
-                  /images/modo-fix-details-level-480.webp 480w,
-                  /images/modo-fix-details-level-768.webp 768w,
-                  /images/modo-fix-details-level-960.webp 960w,
-                  /images/modo-fix-details-level-1200.webp 1200w
-                "
-                sizes="
-                  (max-width: 767px) calc(100vw - 40px),
-                  (max-width: 1279px) calc((100vw - 88px) / 2),
-                  (max-width: 1919px) 492.67px,
-                  559.33px
-                "
-              >
-              <img
-                class="details__image"
-                src="/images/modo-fix-details-level-1200.webp"
-                alt="Livella utilizzata durante un lavoro di montaggio"
-                loading="lazy"
-                decoding="async"
-              >
-            </picture>
-            <picture class="details__media details__media--tools">
-              <source
-                type="image/webp"
-                srcset="
-                  /images/modo-fix-details-tools-360.webp 360w,
-                  /images/modo-fix-details-tools-480.webp 480w,
-                  /images/modo-fix-details-tools-768.webp 768w,
-                  /images/modo-fix-details-tools-960.webp 960w,
-                  /images/modo-fix-details-tools-1200.webp 1200w
-                "
-                sizes="
-                  (max-width: 767px) calc(100vw - 40px),
-                  (max-width: 1279px) calc((100vw - 88px) / 2),
-                  (max-width: 1919px) 492.67px,
-                  559.33px
-                "
-              >
-              <img
-                class="details__image"
-                src="/images/modo-fix-details-tools-1200.webp"
-                alt="Attrezzi manuali pronti per un intervento"
-                loading="lazy"
-                decoding="async"
-              >
-            </picture>
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="storytelling" id="storytelling">
-      <div class="storytelling__inner">
-        <div class="storytelling__intro">
-          <p class="storytelling__label">04 / STORYTELLING</p>
-          <h2 class="storytelling__title">
-            CINQUE PICCOLI LAVORI.
-            <br>
-            UNA SOLA VISITA.
-          </h2>
-          <div class="storytelling__visual">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="
-                  /images/modo-fix-storytelling-360.webp 360w,
-                  /images/modo-fix-storytelling-480.webp 480w,
-                  /images/modo-fix-storytelling-768.webp 768w,
-                  /images/modo-fix-storytelling-960.webp 960w,
-                  /images/modo-fix-storytelling-1200.webp 1200w
-                "
-                sizes="
+      </section>
+      <section class="storytelling" id="storytelling">
+        <div class="storytelling__inner">
+          <div class="storytelling__intro">
+            <p class="storytelling__label">04 / STORYTELLING</p>
+            <h2 class="storytelling__title">
+              CINQUE PICCOLI LAVORI.
+              <br />
+              UNA SOLA VISITA.
+            </h2>
+            <div class="storytelling__visual">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    /images/modo-fix-storytelling-360.webp   360w,
+                    /images/modo-fix-storytelling-480.webp   480w,
+                    /images/modo-fix-storytelling-768.webp   768w,
+                    /images/modo-fix-storytelling-960.webp   960w,
+                    /images/modo-fix-storytelling-1200.webp 1200w
+                  "
+                  sizes="
                   (max-width: 767px) calc(100vw - 40px),
                   (max-width: 1279px) calc(100vw - 64px),
                   695.34px
                 "
-              >
-              <img
-                class="storytelling__image"
-                src="/images/modo-fix-storytelling-1200.webp"
-                alt="Interno domestico con parete in pietra e arredi in legno"
-                loading="lazy"
-                decoding="async"
-              >
-            </picture>
-            <span class="storytelling__marker storytelling__marker--01"></span>
-            <span class="storytelling__marker storytelling__marker--02"></span>
-            <span class="storytelling__marker storytelling__marker--03"></span>
-            <span class="storytelling__marker storytelling__marker--04"></span>
-            <span class="storytelling__marker storytelling__marker--05"></span>
+                />
+                <img
+                  class="storytelling__image"
+                  src="/images/modo-fix-storytelling-1200.webp"
+                  alt="Interno domestico con parete in pietra e arredi in legno"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+              <span
+                class="storytelling__marker storytelling__marker--01"
+              ></span>
+              <span
+                class="storytelling__marker storytelling__marker--02"
+              ></span>
+              <span
+                class="storytelling__marker storytelling__marker--03"
+              ></span>
+              <span
+                class="storytelling__marker storytelling__marker--04"
+              ></span>
+              <span
+                class="storytelling__marker storytelling__marker--05"
+              ></span>
+            </div>
+          </div>
+          <div class="storytelling__tasks">
+            <article class="storytelling__task">
+              <div class="storytelling__task-heading">
+                <span class="storytelling__task-number">01</span>
+                <h3 class="storytelling__task-title">INSTALLARE UNA MENSOLA</h3>
+              </div>
+              <p class="storytelling__task-text">
+                Installazione di una mensola con fissaggi adatti alla parete e
+                al tipo di supporto.
+              </p>
+            </article>
+            <article class="storytelling__task">
+              <div class="storytelling__task-heading">
+                <span class="storytelling__task-number">02</span>
+                <h3 class="storytelling__task-title">REGOLARE ANTA</h3>
+              </div>
+              <p class="storytelling__task-text">
+                Regolazione delle cerniere per migliorare chiusura e
+                allineamento di ante e pensili.
+              </p>
+            </article>
+            <article class="storytelling__task">
+              <div class="storytelling__task-heading">
+                <span class="storytelling__task-number">03</span>
+                <h3 class="storytelling__task-title">RITOCCARE PARETE</h3>
+              </div>
+              <p class="storytelling__task-text">
+                Piccoli ritocchi su fori, segni e imperfezioni della parete.
+              </p>
+            </article>
+            <article class="storytelling__task">
+              <div class="storytelling__task-heading">
+                <span class="storytelling__task-number">04</span>
+                <h3 class="storytelling__task-title">MONTARE BASTONE TENDE</h3>
+              </div>
+              <p class="storytelling__task-text">
+                Montaggio e fissaggio di bastoni per tende a parete o soffitto.
+              </p>
+            </article>
+            <article class="storytelling__task">
+              <div class="storytelling__task-heading">
+                <span class="storytelling__task-number">05</span>
+                <h3 class="storytelling__task-title">SISTEMARE PORTA</h3>
+              </div>
+              <p class="storytelling__task-text">
+                Piccole regolazioni di porte, cerniere e serrature quando
+                necessario.
+              </p>
+            </article>
           </div>
         </div>
-        <div class="storytelling__tasks">
-          <article class="storytelling__task">
-            <div class="storytelling__task-heading">
-              <span class="storytelling__task-number">01</span>
-              <h3 class="storytelling__task-title">INSTALLARE UNA MENSOLA</h3>
-            </div>
-            <p class="storytelling__task-text">
-              Installazione di una mensola con fissaggi adatti alla parete e al tipo di supporto.
+      </section>
+      <section class="properties" id="properties">
+        <div class="properties__inner">
+          <div class="properties__content">
+            <p class="properties__label">05 / IMMOBILI</p>
+            <h2 class="properties__title">
+              TRA UN INQUILINO E<br class="properties__desktop-break" />
+              L'ALTRO?<br class="properties__desktop-break" />
+              USA BENE IL TEMPO A<br class="properties__desktop-break" />
+              DISPOSIZIONE.
+            </h2>
+            <p class="properties__text">
+              Per proprietari che vogliono sistemare piccoli lavori di
+              manutenzione tra un inquilino e l'altro.
             </p>
-          </article>
-          <article class="storytelling__task">
-            <div class="storytelling__task-heading">
-              <span class="storytelling__task-number">02</span>
-              <h3 class="storytelling__task-title">REGOLARE ANTA</h3>
-            </div>
-            <p class="storytelling__task-text">
-              Regolazione delle cerniere per migliorare chiusura e allineamento di ante e pensili.
-            </p>
-          </article>
-          <article class="storytelling__task">
-            <div class="storytelling__task-heading">
-              <span class="storytelling__task-number">03</span>
-              <h3 class="storytelling__task-title">RITOCCARE PARETE</h3>
-            </div>
-            <p class="storytelling__task-text">
-              Piccoli ritocchi su fori, segni e imperfezioni della parete.
-            </p>
-          </article>
-          <article class="storytelling__task">
-            <div class="storytelling__task-heading">
-              <span class="storytelling__task-number">04</span>
-              <h3 class="storytelling__task-title">MONTARE BASTONE TENDE</h3>
-            </div>
-            <p class="storytelling__task-text">
-              Montaggio e fissaggio di bastoni per tende a parete o soffitto.
-            </p>
-          </article>
-          <article class="storytelling__task">
-            <div class="storytelling__task-heading">
-              <span class="storytelling__task-number">05</span>
-              <h3 class="storytelling__task-title">SISTEMARE PORTA</h3>
-            </div>
-            <p class="storytelling__task-text">
-              Piccole regolazioni di porte, cerniere e serrature quando necessario.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="properties" id="properties">
-      <div class="properties__inner">
-        <div class="properties__content">
-          <p class="properties__label">05 / IMMOBILI</p>
-          <h2 class="properties__title">
-            TRA UN INQUILINO E<br class="properties__desktop-break">
-            L'ALTRO?<br class="properties__desktop-break">
-            USA BENE IL TEMPO A<br class="properties__desktop-break">
-            DISPOSIZIONE.
-          </h2>
-          <p class="properties__text">
-            Per proprietari che vogliono sistemare piccoli lavori di manutenzione tra un inquilino e l'altro.
-          </p>
-        </div>
-        <div class="properties__media">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="
-                /images/modo-fix-immobili-360.webp 360w,
-                /images/modo-fix-immobili-480.webp 480w,
-                /images/modo-fix-immobili-768.webp 768w,
-                /images/modo-fix-immobili-960.webp 960w,
-                /images/modo-fix-immobili-1200.webp 1200w
-              "
-              sizes="
+          </div>
+          <div class="properties__media">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  /images/modo-fix-immobili-360.webp   360w,
+                  /images/modo-fix-immobili-480.webp   480w,
+                  /images/modo-fix-immobili-768.webp   768w,
+                  /images/modo-fix-immobili-960.webp   960w,
+                  /images/modo-fix-immobili-1200.webp 1200w
+                "
+                sizes="
                 (max-width: 767px) calc(100vw - 40px),
                 (max-width: 1279px) calc(100vw - 64px),
                 560px
               "
-            >
-            <img
-              class="properties__image"
-              src="/images/modo-fix-immobili-1200.webp"
-              alt="Interno luminoso di un appartamento con porte in legno e ampie finestre"
-              loading="lazy"
-              decoding="async"
-            >
-          </picture>
-        </div>
-      </div>
-    </section>
-    <section class="zone" id="zone">
-      <div class="zone__inner">
-        <div class="zone__content">
-          <div class="zone__text">
-            <p class="zone__label">06 / ZONA</p>
-            <h2 class="zone__title">
-              BRINDISI<br class="zone__desktop-break">
-              MONTAGNA<br class="zone__desktop-break">
-              E DINTORNI.
-            </h2>
-            <p class="zone__description">
-              Interventi a Brindisi Montagna (PZ) e nelle zone limitrofe della Basilicata.
-            </p>
+              />
+              <img
+                class="properties__image"
+                src="/images/modo-fix-immobili-1200.webp"
+                alt="Interno luminoso di un appartamento con porte in legno e ampie finestre"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
-          <p class="zone__region">BASILICATA / ITALIA</p>
         </div>
-        <div class="zone__map-wrap">
-          <iframe
-            class="zone__map"
-            src="https://www.google.com/maps?q=Brindisi%20Montagna%2C%20PZ%2C%20Italy&output=embed"
-            title="Mappa di Brindisi Montagna, PZ"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen
-          ></iframe>
+      </section>
+      <section class="zone" id="zone">
+        <div class="zone__inner">
+          <div class="zone__content">
+            <div class="zone__text">
+              <p class="zone__label">06 / ZONA</p>
+              <h2 class="zone__title">
+                BRINDISI<br class="zone__desktop-break" />
+                MONTAGNA<br class="zone__desktop-break" />
+                E DINTORNI.
+              </h2>
+              <p class="zone__description">
+                Interventi a Brindisi Montagna (PZ) e nelle zone limitrofe della
+                Basilicata.
+              </p>
+            </div>
+            <p class="zone__region">BASILICATA / ITALIA</p>
+          </div>
+          <div class="zone__map-wrap">
+            <iframe
+              class="zone__map"
+              src="https://www.google.com/maps?q=Brindisi%20Montagna%2C%20PZ%2C%20Italy&output=embed"
+              title="Mappa di Brindisi Montagna, PZ"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="faq" id="faq">
-      <div class="faq__inner">
-        <div class="faq__heading">
-          <p class="faq__label">07 / FAQ</p>
-          <h2 class="faq__title">
-            DOMANDE<br>
-            FREQUENTI.
-          </h2>
+      </section>
+      <section class="faq" id="faq">
+        <div class="faq__inner">
+          <div class="faq__heading">
+            <p class="faq__label">07 / FAQ</p>
+            <h2 class="faq__title">
+              DOMANDE<br />
+              FREQUENTI.
+            </h2>
+          </div>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary class="faq__question">
+                <span>CHE TIPO DI LAVORI FATE?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  Piccole riparazioni, installazioni, montaggio mobili, pittura
+                  e ritocchi, manutenzione della casa e preparazione degli
+                  immobili.
+                </p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">
+                <span>POSSO INVIARE DELLE FOTO PRIMA DEL PREVENTIVO?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  Sì. Le foto possono essere utili per capire meglio il lavoro e
+                  valutare la richiesta prima di concordare l'intervento.
+                </p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">
+                <span>
+                  POSSO RAGGRUPPARE PIÙ PICCOLI LAVORI NELLO STESSO INTERVENTO?
+                </span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  Sì. Puoi indicare più piccoli lavori nella stessa richiesta,
+                  così da valutarli insieme e organizzare un unico intervento
+                  quando possibile.
+                </p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">
+                <span>LAVORATE ANCHE CON PROPRIETARI E LANDLORD?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  Sì. Possiamo occuparci di piccoli lavori di manutenzione e
+                  sistemazione degli immobili, anche tra un inquilino e l'altro.
+                </p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">
+                <span>INTERVENITE ANCHE IN PICCOLI UFFICI?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  Sì, per piccoli lavori di manutenzione, montaggio e
+                  sistemazione compatibili con i servizi offerti.
+                </p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">
+                <span>QUALI ZONE COPRITE?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq__answer">
+                <p>
+                  Brindisi Montagna (PZ) e le zone limitrofe della Basilicata.
+                </p>
+              </div>
+            </details>
+          </div>
         </div>
-        <div class="faq__list">
-          <details class="faq__item">
-            <summary class="faq__question">
-              <span>CHE TIPO DI LAVORI FATE?</span>
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </summary>
-            <div class="faq__answer">
-              <p>
-                Piccole riparazioni, installazioni, montaggio mobili, pittura
-                e ritocchi, manutenzione della casa e preparazione degli
-                immobili.
-              </p>
-            </div>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__question">
-              <span>POSSO INVIARE DELLE FOTO PRIMA DEL PREVENTIVO?</span>
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </summary>
-            <div class="faq__answer">
-              <p>
-                Sì. Le foto possono essere utili per capire meglio il lavoro e
-                valutare la richiesta prima di concordare l'intervento.
-              </p>
-            </div>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__question">
-              <span>
-                POSSO RAGGRUPPARE PIÙ PICCOLI LAVORI NELLO STESSO INTERVENTO?
-              </span>
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </summary>
-            <div class="faq__answer">
-              <p>
-                Sì. Puoi indicare più piccoli lavori nella stessa richiesta,
-                così da valutarli insieme e organizzare un unico intervento
-                quando possibile.
-              </p>
-            </div>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__question">
-              <span>LAVORATE ANCHE CON PROPRIETARI E LANDLORD?</span>
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </summary>
-            <div class="faq__answer">
-              <p>
-                Sì. Possiamo occuparci di piccoli lavori di manutenzione e
-                sistemazione degli immobili, anche tra un inquilino e l'altro.
-              </p>
-            </div>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__question">
-              <span>INTERVENITE ANCHE IN PICCOLI UFFICI?</span>
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </summary>
-            <div class="faq__answer">
-              <p>
-                Sì, per piccoli lavori di manutenzione, montaggio e
-                sistemazione compatibili con i servizi offerti.
-              </p>
-            </div>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__question">
-              <span>QUALI ZONE COPRITE?</span>
-              <span class="faq__icon" aria-hidden="true">+</span>
-            </summary>
-            <div class="faq__answer">
-              <p>
-                Brindisi Montagna (PZ) e le zone limitrofe della Basilicata.
-              </p>
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
