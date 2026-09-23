@@ -387,6 +387,23 @@
   .preventivo__submit {
     width: 285px;
   }
+
+  .final-cta {
+    padding: 96px 0;
+  }
+
+  .final-cta__inner {
+    padding-inline: 32px;
+  }
+
+  .final-cta__title {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .final-cta__break--mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -958,6 +975,15 @@
   .preventivo__upload-icon {
     font-weight: 500;
   }
+
+  .final-cta {
+    padding: 160px 0;
+  }
+
+  .final-cta__title {
+    font-size: 88px;
+    line-height: 88px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -1027,12 +1053,21 @@
   .preventivo__inner {
     max-width: 1440px;
   }
+
+  .final-cta__inner {
+    max-width: 1440px;
+  }
 }
 
 @media (max-width: 359px) {
   .properties__title {
     font-size: 39px;
     line-height: 42.9px;
+  }
+
+  .final-cta__title {
+    font-size: 46px;
+    line-height: 46px;
   }
 }
 
