@@ -652,6 +652,103 @@
           </div>
         </div>
       </section>
+      <section class="preventivo" id="preventivo">
+        <div class="preventivo__inner">
+          <div class="preventivo__intro">
+            <p class="preventivo__label">08 / PREVENTIVO</p>
+
+            <h2 class="preventivo__title">
+              RACCONTACI<br />
+              COSA C'È<br class="preventivo__break--desktop" />
+              DA<br class="preventivo__break--mobile-tablet" />
+              FARE.
+            </h2>
+
+            <p class="preventivo__text">
+              Descrivi i lavori, aggiungi qualche foto se può essere utile e
+              invia la richiesta.
+            </p>
+          </div>
+
+          <form class="preventivo__form">
+            <div class="preventivo__field">
+              <label class="preventivo__field-label" for="preventivo-name">
+                NOME
+              </label>
+              <input
+                class="preventivo__input"
+                id="preventivo-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="preventivo__contact-fields">
+              <div class="preventivo__field">
+                <label class="preventivo__field-label" for="preventivo-phone">
+                  TELEFONO
+                </label>
+                <input
+                  class="preventivo__input"
+                  id="preventivo-phone"
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="preventivo__field">
+                <label class="preventivo__field-label" for="preventivo-email">
+                  EMAIL
+                </label>
+                <input
+                  class="preventivo__input"
+                  id="preventivo-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+
+            <div class="preventivo__field">
+              <label class="preventivo__field-label" for="preventivo-message">
+                COSA C'È DA FARE?
+              </label>
+              <textarea
+                class="preventivo__textarea"
+                id="preventivo-message"
+                name="message"
+              ></textarea>
+            </div>
+
+            <div class="preventivo__upload-wrap">
+              <input
+                class="preventivo__file-input"
+                id="preventivo-photos"
+                name="photos"
+                type="file"
+                accept="image/*"
+                multiple
+              />
+
+              <label class="preventivo__upload" for="preventivo-photos">
+                <span>AGGIUNGI FOTO</span>
+                <span class="preventivo__upload-icon" aria-hidden="true"
+                  >+</span
+                >
+              </label>
+            </div>
+
+            <div class="preventivo__submit-wrap">
+              <button class="preventivo__submit" type="button">
+                INVIA LA RICHIESTA
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
