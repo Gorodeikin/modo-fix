@@ -652,25 +652,47 @@
           </div>
         </div>
       </section>
-      <section class="preventivo" id="preventivo">
+      <section
+        class="preventivo"
+        id="preventivo"
+        aria-labelledby="preventivo-title"
+      >
         <div class="preventivo__inner">
           <div class="preventivo__intro">
             <p class="preventivo__label">08 / PREVENTIVO</p>
-
-            <h2 class="preventivo__title">
+            <h2 class="preventivo__title" id="preventivo-title">
               RACCONTACI<br />
               COSA C'È<br class="preventivo__break--desktop" />
               DA<br class="preventivo__break--mobile-tablet" />
               FARE.
             </h2>
-
             <p class="preventivo__text">
               Descrivi i lavori, aggiungi qualche foto se può essere utile e
               invia la richiesta.
             </p>
           </div>
-
-          <form class="preventivo__form">
+          <form
+            class="preventivo__form"
+            action="https://formsubmit.co/2867847ab3321acbce1e48461081a0c3"
+            method="POST"
+            enctype="multipart/form-data"
+            data-preventivo-form
+            novalidate
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nuova richiesta di preventivo — Modo Fix"
+            />
+            <input type="hidden" name="_template" value="table" />
+            <input
+              class="preventivo__honeypot"
+              type="text"
+              name="_honey"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            />
             <div class="preventivo__field">
               <label class="preventivo__field-label" for="preventivo-name">
                 NOME
@@ -681,9 +703,16 @@
                 name="name"
                 type="text"
                 autocomplete="name"
+                aria-describedby="preventivo-name-error"
+                required
               />
+              <p
+                class="preventivo__error"
+                id="preventivo-name-error"
+                data-error-for="name"
+                hidden
+              ></p>
             </div>
-
             <div class="preventivo__contact-fields">
               <div class="preventivo__field">
                 <label class="preventivo__field-label" for="preventivo-phone">
@@ -695,9 +724,16 @@
                   name="phone"
                   type="tel"
                   autocomplete="tel"
+                  inputmode="tel"
+                  aria-describedby="preventivo-phone-error"
                 />
+                <p
+                  class="preventivo__error"
+                  id="preventivo-phone-error"
+                  data-error-for="phone"
+                  hidden
+                ></p>
               </div>
-
               <div class="preventivo__field">
                 <label class="preventivo__field-label" for="preventivo-email">
                   EMAIL
@@ -708,10 +744,18 @@
                   name="email"
                   type="email"
                   autocomplete="email"
+                  inputmode="email"
+                  aria-describedby="preventivo-email-error"
+                  required
                 />
+                <p
+                  class="preventivo__error"
+                  id="preventivo-email-error"
+                  data-error-for="email"
+                  hidden
+                ></p>
               </div>
             </div>
-
             <div class="preventivo__field">
               <label class="preventivo__field-label" for="preventivo-message">
                 COSA C'È DA FARE?
@@ -720,32 +764,60 @@
                 class="preventivo__textarea"
                 id="preventivo-message"
                 name="message"
+                aria-describedby="preventivo-message-error"
+                required
               ></textarea>
+              <p
+                class="preventivo__error"
+                id="preventivo-message-error"
+                data-error-for="message"
+                hidden
+              ></p>
             </div>
-
             <div class="preventivo__upload-wrap">
               <input
                 class="preventivo__file-input"
                 id="preventivo-photos"
-                name="photos"
+                name="attachment"
                 type="file"
                 accept="image/*"
-                multiple
+                aria-describedby="preventivo-file-status preventivo-photos-error"
+                data-preventivo-files
               />
-
               <label class="preventivo__upload" for="preventivo-photos">
                 <span>AGGIUNGI FOTO</span>
                 <span class="preventivo__upload-icon" aria-hidden="true"
                   >+</span
                 >
               </label>
+              <p
+                class="preventivo__file-status"
+                id="preventivo-file-status"
+                data-file-status
+                aria-live="polite"
+              ></p>
+              <p
+                class="preventivo__error"
+                id="preventivo-photos-error"
+                data-error-for="photos"
+                hidden
+              ></p>
             </div>
-
             <div class="preventivo__submit-wrap">
-              <button class="preventivo__submit" type="button">
+              <button
+                class="preventivo__submit"
+                type="submit"
+                data-preventivo-submit
+              >
                 INVIA LA RICHIESTA
               </button>
             </div>
+            <p
+              class="preventivo__form-status"
+              data-form-status
+              role="status"
+              aria-live="polite"
+            ></p>
           </form>
         </div>
       </section>
@@ -758,7 +830,6 @@
             LAVORI?<br />
             MANDACELA.
           </h2>
-
           <a class="final-cta__link" href="#preventivo">
             RICHIEDI UN PREVENTIVO
           </a>
@@ -770,16 +841,13 @@
         <div class="site-footer__top">
           <div class="site-footer__brand">
             <p class="site-footer__wordmark">MODO FIX</p>
-
             <div class="site-footer__meta">
               <p class="site-footer__description">
                 Riparazioni &amp; Manutenzione Casa
               </p>
-
               <p class="site-footer__location">BRINDISI MONTAGNA / PZ</p>
             </div>
           </div>
-
           <nav class="site-footer__nav" aria-label="Navigazione footer">
             <a class="site-footer__nav-link" href="#servizi">SERVIZI</a>
             <a class="site-footer__nav-link" href="#come-funziona">
@@ -789,7 +857,6 @@
             <a class="site-footer__nav-link" href="#faq">FAQ</a>
           </nav>
         </div>
-
         <div class="site-footer__copyright-row">
           <p class="site-footer__copyright">
             © 2026 Modo Fix. Tutti i diritti riservati.

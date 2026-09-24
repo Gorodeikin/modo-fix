@@ -8,3 +8,4 @@ import './styles/sections.css'
 import './styles/responsive.css'
 
 import './scripts/menu.js'
+import './scripts/form.js'
